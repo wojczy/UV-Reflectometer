@@ -208,7 +208,7 @@ if UPanIn & LPanIn then
    UV(UVind,1) = strtod(stat); // write UV value into UV matrix
    plot2d(UV, rect=[0,0,200,max(UV)]); // plot the value live
    handles.TXTstat.String = "background: " + string(stat) + " µW/cm2"; // return the value live
-   if UVind == 200/
+   if UVind == 200
     handles.TXTstat.String = "Initializing for scan..."; // indicate that stepper needs to go into start position
    end    
   end
